@@ -15,13 +15,13 @@ export const BannerStyled = styled.div(
     color: gameConfig.campaignBanner.textColor,
 
     '@media(max-width: 800px)': {
-      fontSize: '19.5px',
+      fontSize: '19.75px',
       borderRadius: '12px',
     },
 
     '@media(max-width: 320px)': {
-      fontSize: '20.5px',
-      borderRadius: '9px',
+      fontSize: '20.75px',
+      borderRadius: '7px',
     },
   }),
 );

@@ -17,14 +17,10 @@ export const ContainerStyled = styled.div(
     aspectRatio: '9/16',
 
     '@media(max-width: 800px)': {
-      width: '100vw',
-      height: 'auto',
       borderRadius: '19px',
     },
-
     '@media(max-width: 320px)': {
-      width: '100vw',
-      height: 'auto',
+      borderRadius: '11px',
     },
   }),
 );
