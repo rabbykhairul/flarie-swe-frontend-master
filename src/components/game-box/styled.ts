@@ -18,11 +18,13 @@ export const ContainerStyled = styled.div(
     '@media(max-width: 800px)': {
       width: '337.5px',
       height: '600px',
+      borderRadius: '19px',
     },
 
     '@media(max-width: 320px)': {
       width: '320px',
       height: '569px',
+      borderRadius: '15px',
     },
   }),
 );

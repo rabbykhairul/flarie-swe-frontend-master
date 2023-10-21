@@ -13,5 +13,15 @@ export const BannerStyled = styled.div(
     padding: gameConfig.campaignBanner.padding,
     backgroundColor: gameConfig.campaignBanner.background,
     color: gameConfig.campaignBanner.textColor,
+
+    '@media(max-width: 800px)': {
+      fontSize: '19.5px',
+      borderRadius: '12px',
+    },
+
+    '@media(max-width: 320px)': {
+      fontSize: '20.5px',
+      borderRadius: '9px',
+    },
   }),
 );
