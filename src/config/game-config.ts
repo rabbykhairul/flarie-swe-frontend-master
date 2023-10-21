@@ -14,7 +14,7 @@ export const gameConfig = {
   },
   startButton: {
     offsetTop: '70%',
-    buttonText: 'Start Button',
+    buttonText: 'Learn React',
     height: 60,
     width: '60%',
     fontSize: 20,
