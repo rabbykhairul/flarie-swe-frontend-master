@@ -1,9 +1,8 @@
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { StartButton } from './StartButton';
 import { TestElement } from '../../enums/TestElement';
 import { gameConfig } from '../../config/game-config';
-
 afterEach(cleanup);
 
 let button: Element | null;
@@ -18,7 +17,10 @@ describe('[GAME] StartButton', () => {
     expect(button).toHaveTextContent(gameConfig.startButton.buttonText);
   });
 
-  it('SHOULD Render StartButton with click event', () => {
-    //
+  it('SHOULD Render StartButton with click event', async () => {
+    window.alert = jest.fn();
+
+    fireEvent.click(button as Element);
+    expect(window.alert).toBeCalled();
   });
 });
